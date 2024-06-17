@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Isaac-portafolio/static/css/main.d3344d52.css",
-    "main.js": "/Isaac-portafolio/static/js/main.ee153751.js",
-    "static/js/453.1c5306b9.chunk.js": "/Isaac-portafolio/static/js/453.1c5306b9.chunk.js",
+    "main.css": "/Isaac-portafolio/static/css/main.5152545c.css",
+    "main.js": "/Isaac-portafolio/static/js/main.b81812d8.js",
+    "static/js/453.35431607.chunk.js": "/Isaac-portafolio/static/js/453.35431607.chunk.js",
     "static/media/user.svg": "/Isaac-portafolio/static/media/user.d18d291798fef1ad30ee9007447ab76b.svg",
     "index.html": "/Isaac-portafolio/index.html",
-    "main.d3344d52.css.map": "/Isaac-portafolio/static/css/main.d3344d52.css.map",
-    "main.ee153751.js.map": "/Isaac-portafolio/static/js/main.ee153751.js.map",
-    "453.1c5306b9.chunk.js.map": "/Isaac-portafolio/static/js/453.1c5306b9.chunk.js.map"
+    "main.5152545c.css.map": "/Isaac-portafolio/static/css/main.5152545c.css.map",
+    "main.b81812d8.js.map": "/Isaac-portafolio/static/js/main.b81812d8.js.map",
+    "453.35431607.chunk.js.map": "/Isaac-portafolio/static/js/453.35431607.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3344d52.css",
-    "static/js/main.ee153751.js"
+    "static/css/main.5152545c.css",
+    "static/js/main.b81812d8.js"
   ]
 }
