@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.8eb8aa62.css",
-    "main.js": "/home/static/js/main.ccaac9c0.js",
-    "static/js/453.35431607.chunk.js": "/home/static/js/453.35431607.chunk.js",
-    "static/media/profileImg.jpeg": "/home/static/media/profileImg.9c096d3470c425cbb2c3.jpeg",
-    "static/media/artificial-machine-learning.svg": "/home/static/media/artificial-machine-learning.d5b3ea07f765a221f0d721fc654f120f.svg",
-    "static/media/employee-works-remotely.svg": "/home/static/media/employee-works-remotely.a0ecdc59f5c1a859a6bf89791b106184.svg",
-    "static/media/business-discussion.svg": "/home/static/media/business-discussion.95ec9231cc3208f8375f7dc695bc6207.svg",
-    "static/media/github.svg": "/home/static/media/github.34cfa51ae6e676ffc1f41a91f3f205bb.svg",
-    "static/media/react.svg": "/home/static/media/react.9799b2dcb18ddb94b0bebc3f990f3704.svg",
-    "static/media/mysql.svg": "/home/static/media/mysql.3612bb1c4abc985b337c8389eb2216ad.svg",
-    "static/media/user.svg": "/home/static/media/user.d18d291798fef1ad30ee9007447ab76b.svg",
-    "static/media/html.svg": "/home/static/media/html.a8dc15599868256091d031cb566e0f98.svg",
-    "static/media/javascript.svg": "/home/static/media/javascript.5f9b5894d26a484092b9d993c8515448.svg",
-    "static/media/bootstrap.svg": "/home/static/media/bootstrap.d9818dc60d19eb32149a90457504f53d.svg",
-    "static/media/csharp.svg": "/home/static/media/csharp.dcf81132f2bd30073cb92d4fe6e2e075.svg",
-    "index.html": "/home/index.html",
-    "static/media/tailwind-css.svg": "/home/static/media/tailwind-css.2c7d824a613f178f10c8f433dfbbb7b2.svg",
-    "static/media/css.svg": "/home/static/media/css.b6e96be5c8c799b0c4f6a2dcc6c7679f.svg",
-    "main.8eb8aa62.css.map": "/home/static/css/main.8eb8aa62.css.map",
-    "main.ccaac9c0.js.map": "/home/static/js/main.ccaac9c0.js.map",
-    "453.35431607.chunk.js.map": "/home/static/js/453.35431607.chunk.js.map"
+    "main.css": "/portafolio-isaac/static/css/main.8eb8aa62.css",
+    "main.js": "/portafolio-isaac/static/js/main.2497118c.js",
+    "static/js/453.35431607.chunk.js": "/portafolio-isaac/static/js/453.35431607.chunk.js",
+    "static/media/profileImg.jpeg": "/portafolio-isaac/static/media/profileImg.9c096d3470c425cbb2c3.jpeg",
+    "static/media/artificial-machine-learning.svg": "/portafolio-isaac/static/media/artificial-machine-learning.d5b3ea07f765a221f0d721fc654f120f.svg",
+    "static/media/employee-works-remotely.svg": "/portafolio-isaac/static/media/employee-works-remotely.a0ecdc59f5c1a859a6bf89791b106184.svg",
+    "static/media/business-discussion.svg": "/portafolio-isaac/static/media/business-discussion.95ec9231cc3208f8375f7dc695bc6207.svg",
+    "static/media/github.svg": "/portafolio-isaac/static/media/github.34cfa51ae6e676ffc1f41a91f3f205bb.svg",
+    "static/media/react.svg": "/portafolio-isaac/static/media/react.9799b2dcb18ddb94b0bebc3f990f3704.svg",
+    "static/media/mysql.svg": "/portafolio-isaac/static/media/mysql.3612bb1c4abc985b337c8389eb2216ad.svg",
+    "static/media/user.svg": "/portafolio-isaac/static/media/user.d18d291798fef1ad30ee9007447ab76b.svg",
+    "static/media/html.svg": "/portafolio-isaac/static/media/html.a8dc15599868256091d031cb566e0f98.svg",
+    "static/media/javascript.svg": "/portafolio-isaac/static/media/javascript.5f9b5894d26a484092b9d993c8515448.svg",
+    "static/media/bootstrap.svg": "/portafolio-isaac/static/media/bootstrap.d9818dc60d19eb32149a90457504f53d.svg",
+    "static/media/csharp.svg": "/portafolio-isaac/static/media/csharp.dcf81132f2bd30073cb92d4fe6e2e075.svg",
+    "index.html": "/portafolio-isaac/index.html",
+    "static/media/tailwind-css.svg": "/portafolio-isaac/static/media/tailwind-css.2c7d824a613f178f10c8f433dfbbb7b2.svg",
+    "static/media/css.svg": "/portafolio-isaac/static/media/css.b6e96be5c8c799b0c4f6a2dcc6c7679f.svg",
+    "main.8eb8aa62.css.map": "/portafolio-isaac/static/css/main.8eb8aa62.css.map",
+    "main.2497118c.js.map": "/portafolio-isaac/static/js/main.2497118c.js.map",
+    "453.35431607.chunk.js.map": "/portafolio-isaac/static/js/453.35431607.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8eb8aa62.css",
-    "static/js/main.ccaac9c0.js"
+    "static/js/main.2497118c.js"
   ]
 }
