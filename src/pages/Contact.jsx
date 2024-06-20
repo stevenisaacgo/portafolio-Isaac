@@ -1,9 +1,9 @@
 import React from 'react';
-import ContactForm from '../ContactForm'
+import ContactForm from '../components/molecules/ContactForm'
 
 const Contact = () => {
     return(
-        <div className='flex flex-row'>
+        <div className='bg-slate-100 flex flex-row'>
             <ContactForm />
         </div>
     );

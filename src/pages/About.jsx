@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import machineLearningImage from "assets/artificial-machine-learning.svg";
+
 
 const data = [
   {
@@ -18,6 +20,7 @@ const data = [
     title: "Continuous Learning",
     content:
       "I am constantly learning new technologies and techniques to improve my skills. I am always looking for ways to improve my skills and expand my knowledge.",
+    image: machineLearningImage,
   },
 ];
 
@@ -42,6 +45,11 @@ const About = () => {
             {data[currentIndex].title}
           </h3>
           <p className="text-lg">{data[currentIndex].content}</p>
+          <img
+            src={data[currentIndex].image}
+            alt="Slide Image"
+            className="w-full h-auto mt-4"
+          />
         </div>
         <button
           onClick={prevSlide}

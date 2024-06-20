@@ -1,4 +1,6 @@
 import React from "react";
+import profileImg from "assets/profileImg.jpeg";
+import ColourfullBtn from "components/atoms/ColourfullBtn.jsx";
 
 const Hero = () => {
   return (
@@ -8,23 +10,17 @@ const Hero = () => {
           Hello! I am Isaac Godoy
         </h1>
         <p className="mt-4 text-lg">
-          Desarrollador Frontend apasionado por crear experiencias web
-          interactivas y atractivas.
+          I am a Frontend Developer with experience in creating websites and
+          interactive applications.
         </p>
-        <a
-          href="about"
-          className="mt-6 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-full"
-        >
-          Conoce más
-        </a>
+        <ColourfullBtn to="/about" text="More About"/>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-        {/* <img
-          src="../assets/profileImg.jpg"
+        <img
+          src={profileImg}
           alt="Isaac Godoy"
-          className="rounded-lg shadow-lg w-3/4 md:w-full"
-        /> */}
-      <svg src="https://github.com/stevenisaacgo/Isaac-portafolio/blob/Version1.0.0/src/assets/profileImg.jpg"/>
+          className="rounded-lg md:w-64"
+        />
       </div>
     </header>
   );
