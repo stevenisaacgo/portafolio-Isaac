@@ -3,18 +3,21 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import machineLearningImage from "assets/artificial-machine-learning.svg";
-
+import experienceImage from "assets/employee-works-remotely.svg";
+import passionImage from "assets/business-discussion.svg";
 
 const data = [
   {
     title: "Experience",
     content:
       "I have more than 1 year of experience in frontend web development, working on creating websites and interactive applications. I have participated in various projects, from corporate websites to e-commerce platforms, acquiring skills in the use of popular frameworks and libraries such as React.",
+    image: experienceImage,
   },
   {
     title: "Passion for Web Development",
     content:
       "I am passionate about frontend web development. I love working with HTML, CSS and JavaScript to create dynamic and visually appealing websites. I enjoy exploring new techniques and trends in design and user interaction, always seeking to improve the visitor experience.",
+    image: passionImage,
   },
   {
     title: "Continuous Learning",
@@ -48,7 +51,7 @@ const About = () => {
           <img
             src={data[currentIndex].image}
             alt="Slide Image"
-            className="w-full h-auto mt-4"
+            className="md:w-80 mt-4 mx-auto"
           />
         </div>
         <button

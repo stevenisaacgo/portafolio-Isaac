@@ -27,8 +27,8 @@ const sections = [
   },
   {
     title: 'Projects',
-    content: ['Project 1'],
-    links: ['Project 1'],
+    content: ['Navbar Button','Colourfull Button', `Footer`],
+    links: ['projects/#NavbarButton','projects/#ColourfullButton', 'projects/#Footer'],
   },
   {
     title: 'Certificates',
@@ -38,10 +38,9 @@ const sections = [
   {
     title: 'Social',
     content: ['LinkedIn', 'Github'],
-    links: ['notfound', 'notfound'],
+    links: ['https://www.linkedin.com/in/isaac-godoy-ortega-dam/', 'https://github.com/stevenisaacgo'],
   },
 ];
-
 function App() {
   return (
     <Router>
