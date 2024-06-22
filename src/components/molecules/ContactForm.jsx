@@ -2,15 +2,15 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Me</h2>
+    <div className="container mx-auto px-6 py-12 text-white">
+      <h2 className="text-2xl font-bold mb-6">Contact Me</h2>
       <form action="https://getform.io/f/pbqgxkob" method="POST">
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="name">
+          <label className="block" htmlFor="name">
             Name
           </label>
           <input
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+            className="mt-1 block w-full text-gray-700 border-gray-300 rounded-md shadow-sm"
             id="name"
             name="name"
             type="text"
@@ -18,11 +18,11 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="email" required>
+          <label className="block" htmlFor="email" required>
             Email
           </label>
           <input
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+            className="mt-1 block w-full text-gray-700 border-gray-300 rounded-md shadow-sm"
             id="email"
             name="email"
             type="email"
@@ -30,11 +30,11 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="message">
+          <label className="block" htmlFor="message">
             Message
           </label>
           <textarea
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+            className="mt-1 block w-full border-gray-300 text-gray-700 rounded-md shadow-sm"
             id="message"
             name="message"
             rows="4"

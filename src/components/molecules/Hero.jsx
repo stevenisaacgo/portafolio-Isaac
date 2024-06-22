@@ -1,10 +1,10 @@
 import React from "react";
-import profileImg from "assets/profileImg.jpeg";
+import profileImg from "assets/profileImg.webp";
 import ColourfullBtn from "components/atoms/ColourfullBtn.jsx";
 
 const Hero = () => {
   return (
-    <header className="bg-gray-900 text-white p-8 flex flex-col md:flex-row items-center">
+    <header className="bg-slate-900 text-white p-8 flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 text-center md:text-left">
         <h1 className=" py-3 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
           Hello! I am Isaac Godoy

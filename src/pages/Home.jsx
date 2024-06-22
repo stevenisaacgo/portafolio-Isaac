@@ -1,12 +1,18 @@
-import React from 'react';
-import Hero from 'components/molecules/Hero.jsx';
-import Skills from 'components/organisms/Skills.jsx';
+import React, { lazy, Suspense } from 'react';
+import Loader from 'components/atoms/loader/Loader.jsx';
+
+const Hero = lazy(() => import('components/molecules/Hero.jsx'));
+const Skills = lazy(() => import('components/organisms/Skills.jsx'));
 
 const Home = () => {
   return (
     <div className='container mx-auto'>
-      <Hero />
-      <Skills />
+      <Suspense fallback={<Loader />}>
+        <Hero />
+      </Suspense> 
+      <Suspense fallback={<Loader />}>
+        <Skills />
+      </Suspense>
     </div>
   );
 };

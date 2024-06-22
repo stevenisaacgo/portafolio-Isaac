@@ -50,7 +50,7 @@ const About = () => {
           <p className="text-lg">{data[currentIndex].content}</p>
           <img
             src={data[currentIndex].image}
-            alt="Slide Image"
+            alt={data[currentIndex].title}
             className="md:w-80 mt-4 mx-auto"
           />
         </div>
