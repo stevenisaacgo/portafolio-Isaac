@@ -1,5 +1,5 @@
 {
-  "homepage": "https://stevenisaacgo.github.io/",
+  "homepage": "https://stevenisaac.social/",
   "name": "portafolio-isaac",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "jest": "^27.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cpx build\\index.html build\\404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -44,9 +45,9 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-module-resolver": "^5.0.2",
-    "cpx": "^1.5.0",
     "gh-pages": "^6.1.1",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.4",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   }
 }
