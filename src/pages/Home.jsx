@@ -6,14 +6,14 @@ const Skills = lazy(() => import('components/organisms/Skills.jsx'));
 
 const Home = () => {
   return (
-    <div className='container mx-auto'>
+    <section className='container mx-auto'>
       <Suspense fallback={<Loader />}>
         <Hero />
       </Suspense> 
       <Suspense fallback={<Loader />}>
         <Skills />
       </Suspense>
-    </div>
+    </section>
   );
 };
 

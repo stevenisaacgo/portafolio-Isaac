@@ -14,7 +14,7 @@ const footerSections = [
 
 export default function Projects() {
   return (
-    <div className="bg-slate-900 text-white min-h-screen">
+    <section className="bg-slate-900 text-white min-h-screen">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-8">Components Showcase</h1>
         
@@ -55,6 +55,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
