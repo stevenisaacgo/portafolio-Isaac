@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import user from "assets/user.svg";
 import NavButton from "components/atoms/NavButton";
 
+const gradientBackground = "hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,15 +21,16 @@ const Navbar = () => {
             <Link to="/home">DevelopedbyIsaac</Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <NavButton to="/projects" text="projects" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
-            <NavButton to="/about" text="About" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
-            <NavButton to="/contact" text="Contact" className="hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
+            <NavButton to="/projects" text="projects" className={gradientBackground} />
+            <NavButton to="/about" text="About" className={gradientBackground} />
+            <NavButton to="/contact" text="Contact" className={gradientBackground} />
           </div>
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
               type="button"
               className="focus:outline-none"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               <svg
                 className="w-6 h-6"
@@ -57,9 +60,9 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <div className="md:hidden mt-3 space-y-2">
-            <NavButton to="/projects" text="Projects" className="block hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
-            <NavButton to="/about" text="About" className="block hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
-            <NavButton to="/contact" text="Contact" className="block hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" />
+            <NavButton to="/projects" text="Projects" className= {`block ${gradientBackground}`} />
+            <NavButton to="/about" text="About" className= {`block ${gradientBackground}`} />
+            <NavButton to="/contact" text="Contact" className= {`block ${gradientBackground}`} />
           </div>
         )}
       </div>
