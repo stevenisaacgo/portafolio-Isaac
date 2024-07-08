@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 import Navbar from "components/organisms/Navbar";
 import About from "pages/About";
-import Projects from "pages/Projects";
+import ComponentsPage from "pages/ComponentsPage";
 import Contact from "pages/Contact";
 import Footer from "components/organisms/Footer";
 import Home from "pages/Home";
 import NotFound from "./pages/404";
-import Loader from "components/atoms/loader/Loader.jsx";
+import Loader from "components/atoms/Loader.jsx";
 
 const TypeformEmbed = lazy(() =>
   import("components/organisms/TypeformEmbed.jsx")
@@ -69,19 +69,24 @@ const sections = [
     ],
   },
 ];
+
+const btnInfo = [
+  { to: "/projects", text: "Projects", title: "My Projects" },
+  { to: "/components", text: "Components", title: "My Components" },
+  { to: "/about", text: "About", title: "About Us" },
+  { to: "/contact", text: "Contact", title: "Contact Us" },
+];
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-slate-900">
-        <div className="relative">
           <TypeformEmbed />
-          <Navbar />
-        </div>
-        <div className="flex-grow">
+          <Navbar btnInfo={btnInfo} />
+        <div>
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/components" element={<ComponentsPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/404" element={<NotFound />} />
