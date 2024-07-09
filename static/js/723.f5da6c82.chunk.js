@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportafolio_isaac=self.webpackChunkportafolio_isaac||[]).push([[723],{9723:(e,a,s)=>{s.r(a),s.d(a,{default:()=>c});s(5043);var l=s(3821),t=s(280),r=s(579);const c=e=>{let{code:a}=e;return(0,r.jsx)("div",{className:"bg-gray-800 p-4 rounded-lg shadow-lg text-white",children:(0,r.jsx)(l.A,{language:"jsx",style:t.A,children:a})})}}}]);
+//# sourceMappingURL=723.f5da6c82.chunk.js.map

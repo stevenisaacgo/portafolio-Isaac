@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportafolio_isaac=self.webpackChunkportafolio_isaac||[]).push([[508],{5508:(a,e,s)=>{s.r(e),s.d(e,{default:()=>t});s(5043);const c=s.p+"static/media/artificial-machine-learning.019fe53d089258827fc1a484d51328ef.svg";var i=s(579);const t=()=>(0,i.jsx)(i.Fragment,{children:(0,i.jsx)("img",{src:c,alt:"Experience",className:"md:w-80 mt-4 mx-auto"})})}}]);
+//# sourceMappingURL=508.a6e6f25a.chunk.js.map

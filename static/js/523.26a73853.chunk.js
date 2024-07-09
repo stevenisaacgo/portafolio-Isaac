@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportafolio_isaac=self.webpackChunkportafolio_isaac||[]).push([[523],{4523:(a,e,s)=>{s.r(e),s.d(e,{default:()=>o});s(5043);const c=s.p+"static/media/employee-works-remotely.a0ecdc59f5c1a859a6bf89791b106184.svg";var t=s(579);const o=()=>(0,t.jsx)(t.Fragment,{children:(0,t.jsx)("img",{src:c,alt:"Experience",className:"md:w-80 mt-4 mx-auto"})})}}]);
+//# sourceMappingURL=523.26a73853.chunk.js.map
