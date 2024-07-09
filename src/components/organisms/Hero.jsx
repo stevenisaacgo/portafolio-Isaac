@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Suspense} from "react";
+import Loader from "components/atoms/Loader";
 import profileImg from "assets/profileImg.webp";
-import ColourfullBtn from "components/atoms/ColourfullBtn.jsx";
+import ColourfulBtn from "components/atoms/ColourfulBtn.jsx";
 import Typewriter from "components/atoms/TypeWriter";
 
 const words = [
@@ -15,7 +16,7 @@ const profileImgicon = profileImg;
 
 const Hero = () => {
   return (
-    <section className="text-white p-8 flex flex-col md:flex-row items-center relative">
+    <section className="text-white p-8 flex flex-col items-center md:flex-row relative">
       <div className="relative md:w-1/2 text-center md:text-left">
         <div className="static">
           <Typewriter words={words} className={classNameTypewriter} />
@@ -26,8 +27,9 @@ const Hero = () => {
             interactive applications.
           </p>
         </div>
-        <ColourfullBtn to="/about" text="More About" />
+        <ColourfulBtn to="/about" text="More About" />
       </div>
+      <Suspense fallback={<Loader />}>
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
         <img
           className="rounded-full w-80 h-auto"
@@ -35,6 +37,7 @@ const Hero = () => {
           alt="Imagen Circular"
         />
       </div>
+      </Suspense>
     </section>
   );
 };

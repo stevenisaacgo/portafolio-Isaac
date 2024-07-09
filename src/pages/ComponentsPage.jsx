@@ -1,8 +1,8 @@
-import React from "react";
-import ComponentShowcase from "components/organisms/ComponentShowcase";
-import NavButton, { navBtnCode } from "components/atoms/NavButton";
-import ColourfullBtn, { colourfullBtnCode } from "components/atoms/ColourfullBtn";
-import Footer, { footerCode } from "components/organisms/Footer";
+import React,{lazy, Suspense} from "react";
+import Loader from "components/atoms/Loader.jsx";
+import { navBtnCode } from "components/atoms/NavButton";
+import { colourfulBtnCode } from "components/atoms/ColourfulBtn";
+import { footerCode } from "components/organisms/Footer";
 
 const footerSections = [
   {
@@ -12,9 +12,16 @@ const footerSections = [
   },
 ];
 
-export default function ComponentsPage() {
+const ComponentShowcase = lazy(() => import("components/organisms/ComponentShowcase"));
+const Footer = lazy(() => import("components/organisms/Footer.jsx"));
+const NavButton = lazy(() => import("components/atoms/NavButton"));
+const ColourfulBtn = lazy(() => import("components/atoms/ColourfulBtn.jsx"));
+
+
+const ComponentsPage = () =>  {
   return (
     <section className="bg-slate-900 text-white">
+      <Suspense fallback={<Loader/>}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-8">Components Showcase</h1>
         
@@ -32,11 +39,11 @@ export default function ComponentsPage() {
         </div>
 
         <div className="pb-8">
-          <h2 className="text-2xl font-semibold mb-4">Colourfull Button</h2>
+          <h2 className="text-2xl font-semibold mb-4">Colourful Button</h2>
           <div className="flex flex-col gap-8 items-center justify-between">
-            <ColourfullBtn text="Example" />
+            <ColourfulBtn text="Example" />
             <div className="w-full lg:w-4/5">
-              <ComponentShowcase code={colourfullBtnCode} />
+              <ComponentShowcase code={colourfulBtnCode} />
             </div>
           </div>
         </div>
@@ -55,6 +62,8 @@ export default function ComponentsPage() {
           </div>
         </div>
       </div>
+      </Suspense>
     </section>
   );
 }
+export default ComponentsPage;

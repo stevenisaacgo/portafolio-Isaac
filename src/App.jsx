@@ -1,5 +1,5 @@
 import "tailwind.css";
-import React, { lazy, Suspense } from "react";
+import React, { lazy } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,8 +12,9 @@ import ComponentsPage from "pages/ComponentsPage";
 import Contact from "pages/Contact";
 import Footer from "components/organisms/Footer";
 import Home from "pages/Home";
-import NotFound from "./pages/404";
-import Loader from "components/atoms/Loader.jsx";
+import NotFound from "pages/404";
+import ExperiencePage from "./pages/ExperiencePage";
+import PrivacyRequestPage from "./pages/PrivacyRequestPage";
 
 const TypeformEmbed = lazy(() =>
   import("components/organisms/TypeformEmbed.jsx")
@@ -22,8 +23,8 @@ const TypeformEmbed = lazy(() =>
 const sections = [
   {
     title: "About Me",
-    content: ["Achivements", "Programming Knowledge", "Contact"],
-    links: ["notfound", "notfound", "Contact"],
+    content: ["Achievements", "Programming Knowledge", "Contact"],
+    links: ["notfound", "home", "Contact"],
   },
   {
     title: "Skills",
@@ -37,28 +38,28 @@ const sections = [
       "SQL",
     ],
     links: [
-      "notfound",
-      "notfound",
-      "notfound",
-      "notfound",
-      "notfound",
-      "notfound",
-      "notfound",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
     ],
   },
   {
-    title: "Projects",
-    content: ["Navbar Button", "Colourfull Button", `Footer`],
+    title: "Components",
+    content: ["Navbar Button", "Colourful Button", `Footer`],
     links: [
-      "projects/#NavbarButton",
-      "projects/#ColourfullButton",
-      "projects/#Footer",
+      "components",
+      "components",
+      "components",
     ],
   },
   {
     title: "Certificates",
-    content: ["Certificate FrontEnd", "Certificate DAM"],
-    links: ["notfound", "notfound"],
+    content: ["Certificate FrontEnd", "Certificate DAM", "Certificate C1"],
+    links: ["privacy", "privacy", "privacy"],
   },
   {
     title: "Social",
@@ -73,31 +74,37 @@ const sections = [
 const btnInfo = [
   { to: "/projects", text: "Projects", title: "My Projects" },
   { to: "/components", text: "Components", title: "My Components" },
+  { to: "/experience", text: "Experience", title: "Experience" },
   { to: "/about", text: "About", title: "About Us" },
   { to: "/contact", text: "Contact", title: "Contact Us" },
 ];
+
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-slate-900">
-          <TypeformEmbed />
+      <div className="flex flex-col min-h-svh bg-slate-900 justify-between">
           <Navbar btnInfo={btnInfo} />
+          <TypeformEmbed />
         <div>
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/components" element={<ComponentsPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/experience" element={<ExperiencePage/>}/>
+            <Route path="/privacy" element={<PrivacyRequestPage />} />
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate replace to="/404" />} />
           </Routes>
         </div>
+        <div className="w-full">
         <Footer
           sections={sections}
           textTitle="Isaac Godoy Ortega"
           textSubtitle="&copy; 2023 My Personal Website. All rights reserved."
         />
+        </div>
       </div>
     </Router>
   );

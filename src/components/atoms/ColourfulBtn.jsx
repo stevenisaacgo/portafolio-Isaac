@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ColourfullBtn = ({ text, to }) => {
+const ColourfulBtn = ({ text, to }) => {
   return (
     <Link
       to={to}
@@ -11,13 +11,13 @@ const ColourfullBtn = ({ text, to }) => {
     </Link>
   );
 };
-export default ColourfullBtn;
+export default ColourfulBtn;
 
-export const colourfullBtnCode = `import React from 'react';
+export const colourfulBtnCode = `import React from 'react';
 import { Link } from "react-router-dom";
 
 
-const ColourfullBtn = ({ text, to }) => {
+const ColourfulBtn = ({ text, to }) => {
     return(
         <Link to={to}
         className="mt-6 inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-full"
@@ -26,4 +26,4 @@ const ColourfullBtn = ({ text, to }) => {
       </Link>
     )
 };
-export default ColourfullBtn;`;
+export default ColourfulBtn;`;

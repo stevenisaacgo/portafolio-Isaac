@@ -1,4 +1,5 @@
-  import React from "react";
+  import React, {Suspense} from "react";
+  import Loader from "components/atoms/Loader.jsx";
 
   import htmlIcon from "icons/html.svg";
   import bootstrapIcon from "icons/bootstrap.svg";
@@ -49,6 +50,7 @@
               aria-hidden="true"
             >
               {Object.entries(skills).map(([key, { icon, name }]) => (
+                  <Suspense fallback={<Loader/>}>
                 <div key={key} className="flex flex-col">
                   <img
                     src={icon}
@@ -59,6 +61,7 @@
                     {name}
                   </span>
                 </div>
+                  </Suspense>
               ))}
             </div>
           </div>
