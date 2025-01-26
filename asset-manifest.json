@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio-isaac/static/css/main.bcd4c2e3.css",
-    "main.js": "/portafolio-isaac/static/js/main.b441ea65.js",
+    "main.js": "/portafolio-isaac/static/js/main.e6253889.js",
     "static/js/448.adf9fc1c.chunk.js": "/portafolio-isaac/static/js/448.adf9fc1c.chunk.js",
     "static/js/523.26a73853.chunk.js": "/portafolio-isaac/static/js/523.26a73853.chunk.js",
     "static/js/829.4f810094.chunk.js": "/portafolio-isaac/static/js/829.4f810094.chunk.js",
@@ -30,7 +30,7 @@
     "static/media/tailwind-css.svg": "/portafolio-isaac/static/media/tailwind-css.2c7d824a613f178f10c8f433dfbbb7b2.svg",
     "static/media/css.svg": "/portafolio-isaac/static/media/css.b6e96be5c8c799b0c4f6a2dcc6c7679f.svg",
     "main.bcd4c2e3.css.map": "/portafolio-isaac/static/css/main.bcd4c2e3.css.map",
-    "main.b441ea65.js.map": "/portafolio-isaac/static/js/main.b441ea65.js.map",
+    "main.e6253889.js.map": "/portafolio-isaac/static/js/main.e6253889.js.map",
     "448.adf9fc1c.chunk.js.map": "/portafolio-isaac/static/js/448.adf9fc1c.chunk.js.map",
     "523.26a73853.chunk.js.map": "/portafolio-isaac/static/js/523.26a73853.chunk.js.map",
     "829.4f810094.chunk.js.map": "/portafolio-isaac/static/js/829.4f810094.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.bcd4c2e3.css",
-    "static/js/main.b441ea65.js"
+    "static/js/main.e6253889.js"
   ]
 }
