@@ -87,13 +87,13 @@ function App() {
           <TypeformEmbed />
         <div>
           <Routes>
-            <Route path="/portafolio-isaac" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/components" element={<ComponentsPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/experience" element={<ExperiencePage/>}/>
             <Route path="/privacy" element={<PrivacyRequestPage />} />
-            <Route path="/" element={<Navigate to="/portafolio-isaac" />} />
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate replace to="/404" />} />
           </Routes>
