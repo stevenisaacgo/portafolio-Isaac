@@ -65,7 +65,7 @@ const sections = [
     title: "Social",
     content: ["LinkedIn", "Github"],
     links: [
-      "https://www.linkedin.com/in/isaac-godoy-ortega-dam/",
+      "https://www.linkedin.com/in/isaac-godoy-ortega/",
       "https://github.com/stevenisaacgo",
     ],
   },
