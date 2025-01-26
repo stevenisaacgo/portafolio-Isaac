@@ -1,5 +1,5 @@
 {
-  "homepage": "https://stevenisaac.social/",
+  "homepage": "https://stevenisaacgo.github.io/home",
   "name": "portafolio-isaac",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@emotion/styled": "^11.11.5",
     "@headlessui/react": "^2.1.2",
     "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
     "@react-buddy/ide-toolbox": "^2.4.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.4",
     "webpack": "^5.92.1",
